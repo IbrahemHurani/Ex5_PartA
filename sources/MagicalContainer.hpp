@@ -29,7 +29,7 @@ namespace ariel {
             int index;
 
         public:
-            AscendingIterator(MagicalContainer& cont);
+            AscendingIterator(MagicalContainer&);
             AscendingIterator(AscendingIterator& other) : container(other.container) , index(other.index){}
             ~AscendingIterator() = default;
 
@@ -56,7 +56,7 @@ namespace ariel {
             MagicalContainer& container;
 
         public:
-            SideCrossIterator(MagicalContainer& cont);
+            SideCrossIterator(MagicalContainer&);
             SideCrossIterator(SideCrossIterator& other) : container(other.container){}
             ~SideCrossIterator() = default;
 
@@ -84,7 +84,7 @@ namespace ariel {
             MagicalContainer& container;
 
         public:
-            PrimeIterator(MagicalContainer& cont);
+            PrimeIterator(MagicalContainer& );
             PrimeIterator(PrimeIterator& other) : container(other.container){}
             ~PrimeIterator() = default;
 
